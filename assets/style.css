@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #160f19;
+}
+.wrapper {
+  padding-top: 10px;
+  width: 450px;
+  height: 448px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 10px #10c169;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons span {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  margin: 0px 1px;
+  color: #fcf8f8;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 38px;
+  background: #e21111;
+}
+.weeks {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.weeks li {
+  cursor: pointer;
+}
+.day {
+  margin-top: 9px;
+  width: 450px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.days li.interactive{
+    color: #aaa;
+}
+.icons span:hover {
+  color: #0d0311;
+}
+
+.calendar ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  text-align: center;
+  /* background: #9b59b6; */
+  padding: 10px;
+}
+
+.calendar .days li {
+  z-index: 1;
+  margin-top: 30px;
+  cursor: pointer;
+  /* background-color: #743f3f; */
+  transition: 0.4s;
+}
+.active {
+  background: #e21111;
+  color: #fff;
+}
+
+.calendar ul li {
+  position: relative;
+  width: calc(100% / 7);
+}
+.calendar ul li:hover:not(.active) {
+  background: #eee;
+}
+#box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20px; */
+    margin-top: 40px;
+    /* background-color: #e21111; */
+}
+
+#months-area,
+#buttons-area {
+    display: flex;
+    /* flex-direction: column; Önceki "space-between" yerine "column" kullanın */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+}
+#buttons-area{
+    margin-top: 10px;
+    gap: 20px;
+    border: none;
+    outline: none;
+}
+#buttons-area button{
+    border: none;
+    outline: none;
+}
